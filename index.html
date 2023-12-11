@@ -25,7 +25,7 @@
                 <!-- <img src="ava.jpg" alt="avatar" class="no-select" /> -->
             </div>
             <span>
-                <h1>Askar Kasimov</h1>
+                <h1 id="name">Askar Kasimov</h1>
                 <h2>17 y.o. dev & infosec enjoyer from <img src="./icons/ru.gif" alt=":ru:" /></h2>
             </span>
         </div>
@@ -146,6 +146,10 @@
             </div>
         </div>
     </div>
+    <script src="./typeit.min.js"></script>
+    <script>
+        new TypeIt("#name", {speed: 180}).go();
+    </script>
 </body>
 
 </html>
