@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-p, h1, h2 {
+p,
+h1,
+h2 {
     margin: 0 0 0 0;
     font-weight: 400;
 }
@@ -163,9 +165,9 @@ body {
     height: calc(100% + 3px * 2);
     width: calc(100% + 3px * 2);
     background: linear-gradient(60deg,
-            #833ab4,
-            #fd1d1d,
-            #fcb045);
+            #cd2148,
+            #ed14e7,
+            #0a8d8f);
     border-radius: 100%;
     z-index: -1;
     animation: animatedgradient 3s ease alternate infinite;
@@ -182,7 +184,7 @@ body {
     animation: none;
     transition: background-position .5s ease-in-out;
     background-repeat: no-repeat;
-    filter: blur(3px);
+    filter: blur(2px);
 }
 
 .tag:hover:after {
