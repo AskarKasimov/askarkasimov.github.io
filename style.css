@@ -1,0 +1,288 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.wrapper {
+    margin: 5vh auto;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 40px;
+}
+
+.ava {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.ava img {
+    max-width: 200px;
+    border-radius: 100%;
+    pointer-events: none;
+}
+
+.tags-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tag {
+    position: relative;
+    border-radius: 20px;
+    padding: 5px 14px 5px 14px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.tag img {
+    max-height: 12px;
+    max-width: 12px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    white-space: nowrap;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 16px;
+    line-height: 46px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #050505 !important;
+    text-decoration: none;
+}
+
+.gradient-border {
+    background: #000000;
+    position: relative;
+    border-radius: 20px;
+}
+
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    height: calc(100% + 3px * 2);
+    width: calc(100% + 3px * 2);
+    background: linear-gradient(60deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045);
+    border-radius: 20px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.tag:after {
+    border-radius: 20px;
+    top: calc(-1 * 2px);
+    left: calc(-1 * 2px);
+    height: calc(100% + 2px * 2);
+    width: calc(100% + 2px * 2);
+    animation: none;
+}
+
+.go::after {
+    background: #4DD0E1;
+}
+
+.py:after {
+    background: linear-gradient(45deg,
+            #326C9B,
+            #FFDA4C);
+}
+
+.flask:after {
+    background: gray;
+}
+
+.sql:after {
+    background: linear-gradient(35deg,
+            #E87B00, 30%,
+            #FFFFFF, 70%,
+            #E87B00)
+}
+
+.tg:after {
+    background: linear-gradient(35deg,
+            #29B6F6, 5%,
+            #FFFFFF, 15%,
+            #29B6F6);
+}
+
+.ts:after {
+    background: linear-gradient(35deg,
+            #017ACC, 40%,
+            #FFFFFF, 50%,
+            #017ACC);
+}
+
+.react:after {
+    background: #149ECA;
+}
+
+.java:after {
+    background: linear-gradient(45deg,
+            #1461B7,
+            #EF4235);
+}
+
+.kt:after {
+    background: linear-gradient(45deg,
+            #D15064,
+            #A23CE2,
+            #775BF6);
+}
+
+.android:after {
+    background: linear-gradient(35deg,
+            #30DC80, 20%,
+            #FFFFFF, 40%,
+            #30DC80);
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.links-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 12px 12px 12px 12px;
+    box-shadow: 0px 0px 0px 0px #3b3b3b;
+    transition: box-shadow .2s ease-in-out;
+    border-radius: 10px;
+}
+
+.link img {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.link:hover {
+    box-shadow: 0px 0px 0px 2px #3b3b3b;
+}
+
+.hoverUnderlineAnimation {
+    display: inline-block;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    transition: color .25s;
+    font-size: 16px;
+}
+
+.hoverUnderlineAnimation:hover {
+    color: #D82626;
+}
+
+.hoverUnderlineAnimation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #D82626;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.hoverUnderlineAnimation:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
