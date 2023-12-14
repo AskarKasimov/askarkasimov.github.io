@@ -1,5 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
+:root {
+    color-scheme: dark;
+}
+
 * {
     box-sizing: border-box;
 }
