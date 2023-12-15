@@ -166,10 +166,10 @@ body {
 .gradient-border:after {
     content: '';
     position: absolute;
-    top: calc(-1 * 3px);
-    left: calc(-1 * 3px);
-    height: calc(100% + 3px * 2);
-    width: calc(100% + 3px * 2);
+    top: calc(-1 * 15px);
+    left: calc(-1 * 15px);
+    height: calc(100% + 15px * 2);
+    width: calc(100% + 15px * 2);
     background: linear-gradient(60deg,
             #cd2148,
             #ed14e7,
@@ -188,13 +188,13 @@ body {
     height: calc(100% + 2.5px * 2);
     width: calc(100% + 2.5px * 2);
     animation: none;
-    transition: background-position .5s ease-in-out;
+    transition: background-position .7s ease-in-out;
     background-repeat: no-repeat;
     filter: blur(2px);
 }
 
 .tag:hover:after {
-    background-position: 10vh;
+    background-position: 100px;
 }
 
 .go:after {
@@ -206,9 +206,9 @@ body {
 
 .py:after {
     background: linear-gradient(60deg,
-            #326C9B,
-            #FFDA4C,
-            #326C9B);
+            #FFDA4C, 20%,
+            #326C9B, 90%,
+            #FFDA4C);
 }
 
 .flask:after {
