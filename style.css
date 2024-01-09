@@ -315,9 +315,8 @@ body {
     border-radius: 10px;
 }
 
-.link img {
-    max-width: 48px;
-    max-height: 48px;
+.link svg {
+    transition: fill .2s ease-in-out;
 }
 
 .link:hover {
@@ -352,4 +351,20 @@ body {
 .hoverUnderlineAnimation:hover::after {
     transform: scaleX(1);
     transform-origin: center;
+}
+
+.mail-icon:hover svg{
+    fill: yellow;
+}
+
+.tg-icon:hover svg{
+    fill: #2AABEE;
+}
+
+.gh-icon:hover svg {
+    fill: #CDD9E5;
+}
+
+.in-icon:hover svg {
+    fill: #0078D4;
 }
