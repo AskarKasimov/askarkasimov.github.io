@@ -353,11 +353,11 @@ body {
     transform-origin: center;
 }
 
-.mail-icon:hover svg{
+.mail-icon:hover svg {
     fill: yellow;
 }
 
-.tg-icon:hover svg{
+.tg-icon:hover svg {
     fill: #2AABEE;
 }
 
@@ -367,4 +367,17 @@ body {
 
 .in-icon:hover svg {
     fill: #0078D4;
+}
+
+@media screen and (max-width:580px) {
+    .links {
+        gap: 10px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .link {
+        width: 125px;
+        max-width: 125px;
+    }
 }
