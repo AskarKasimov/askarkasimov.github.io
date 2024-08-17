@@ -166,27 +166,30 @@ body {
 .gradient-border:after {
     content: '';
     position: absolute;
-    top: calc(-1 * 15px);
-    left: calc(-1 * 15px);
-    height: calc(100% + 15px * 2);
-    width: calc(100% + 15px * 2);
+    margin: auto auto auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 70%;
+    width: 70%;
     background: linear-gradient(60deg,
             #cd2148,
             #ed14e7,
-            #0a8d8f);
-    border-radius: 100%;
+            #0a8d8f,
+            #FFFFFF);
     z-index: -1;
-    animation: animatedgradient 3s ease alternate infinite;
+    animation: animatedgradient 3s ease-in-out alternate infinite;
     background-size: 300% 300%;
     filter: blur(60px);
 }
 
 .tag:after {
     border-radius: 20px;
-    top: calc(-1 * 2.5px);
-    left: calc(-1 * 2.5px);
-    height: calc(100% + 2.5px * 2);
-    width: calc(100% + 2.5px * 2);
+    top: calc(-1 * 1.5px);
+    left: calc(-1 * 1.5px);
+    height: calc(100% + 1.5px * 2);
+    width: calc(100% + 1.5px * 2);
     animation: none;
     transition: background-position .7s ease-in-out;
     background-repeat: no-repeat;
